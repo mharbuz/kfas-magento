@@ -23,15 +23,17 @@ concurrency:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
     
   # Single deploy job since we're just deploying
   deploy:
     needs:
-      build:
-        - name: Install dependencies and build
-          run: |
-            npm install
-            npm run build
+      build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
