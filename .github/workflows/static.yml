@@ -22,8 +22,16 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    
   # Single deploy job since we're just deploying
   deploy:
+    needs:
+      build:
+        - name: Install dependencies and build
+          run: |
+            npm install
+            npm run build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,8 +44,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload dist directory
+          path: 'dist/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
