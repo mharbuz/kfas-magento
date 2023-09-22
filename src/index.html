@@ -96,8 +96,6 @@
         letter-spacing: normal !important;
       }
       #mlb2-7580492.ml-form-embedContainer .ml-form-embedWrapper {
-        background-color: #f6f6f6;
-        
         border-width: 0px;
         border-color: transparent;
         border-radius: 4px;
@@ -110,7 +108,7 @@
               }
       #mlb2-7580492.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
       #mlb2-7580492.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
-      #mlb2-7580492.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+      #mlb2-7580492.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 600px; width: 100%; }
       #mlb2-7580492.ml-form-embedContainer .ml-form-align-left { text-align: left; }
       #mlb2-7580492.ml-form-embedContainer .ml-form-align-center { text-align: center; }
       #mlb2-7580492.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
@@ -798,12 +796,7 @@
               <div class="ml-form-embedPermissions" style="">
                 <div class="ml-form-embedPermissionsContent default privacy-policy">
 
-                  
-
-                  <p><span style="font-size: 10px;">Wysyłamy <u>jedynie</u> treści związane z KSeF - zero spamu.<br></span><span style="font-size: 10px;">Możesz wypisać się z listy mailingowej w każdym momencie.<br></span><span style="font-size: 10px;">Szczegóły znajdziesz w Polityce prywatności</span></p>
-
-
-
+                  <p><span style="font-size: 10px;">Wysyłamy <u>jedynie</u> treści związane z KSeF - zero spamu. Możesz wypisać się z listy mailingowej w każdym momencie.<br></span><span style="font-size: 10px;">Szczegóły znajdziesz w Polityce prywatności</span></p>
                   
                 </div>
               </div>
@@ -841,8 +834,12 @@
               <div class="ml-form-embedSubmit">
                 
                   <button type="submit" class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-                    Zapisz się
-                    <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+                    <span class="pe-2">Zapisz się </span>
+                    <span class="padding-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                        <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"/>
+                      </svg>
+                    </span>
                   </button>
 
                 
@@ -866,7 +863,7 @@
                   <p>
                     Otrzymaliśmy Twoje zgłoszenie.
                     <br>
-                    Skontktujemy się wkrótce
+                    Skontaktujemy się wkrótce.
                   </p>
                 
               
@@ -906,12 +903,9 @@
       </div>
     </div>
 
-
-    <hr class="col-1 my-5 mx-0">
-
-
     <div class="container my-5">
       <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis">Do kiedy mam czas?</h2>
         <div class="timeline">
 
           <!--first-->
@@ -1015,5 +1009,29 @@
       <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
     </div>
   -->    
+    <div class="container my-5">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="/privacy-policy.html" class="nav-link px-2 text-body-secondary">Polityka prywatności</a></li>
+        </ul>
+        <div class="container text-center ">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-auto">
+              © 2023 Maciej Harbuz
+            </div>
+            <div class="col-lg-auto">
+              ul. Poranna 48/10
+            </div>
+            <div class="col-lg-auto">
+              53-026 Wrocław
+            </div>
+            <div class="col-lg-auto">
+              NIP: 912-182-59-39
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

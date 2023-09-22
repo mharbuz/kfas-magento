@@ -18,7 +18,8 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({ template: './src/index.html', filename: 'index.html', }),
+    new HtmlWebpackPlugin({ template: './src/privacy-policy.html', filename: 'privacy-policy.html', }),
     new miniCssExtractPlugin()
   ],
   module: {
