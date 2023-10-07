@@ -686,3 +686,23 @@
 		line-height: 14px !important;
 	  }
 	}
+
+	.ml-form-recaptcha {
+		margin-bottom: 20px;
+	  }
+	
+	  .ml-form-recaptcha.ml-error iframe {
+		border: solid 1px #ff0000;
+	  }
+	
+	  @media screen and (max-width: 480px) {
+		.ml-form-recaptcha {
+		  width: 220px!important
+		}
+		.g-recaptcha {
+		  transform: scale(0.78);
+		  -webkit-transform: scale(0.78);
+		  transform-origin: 0 0;
+		  -webkit-transform-origin: 0 0;
+		}
+	  }
