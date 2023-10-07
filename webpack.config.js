@@ -21,8 +21,8 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html', filename: 'index.html', }),
-    new HtmlWebpackPlugin({ template: './src/privacy-policy.html', filename: 'privacy-policy.html', }),
+    new HtmlWebpackPlugin({ template: './src/index.html', filename: 'index.html', favicon: "./src/favicon.ico" }),
+    new HtmlWebpackPlugin({ template: './src/privacy-policy.html', filename: 'privacy-policy.html', favicon: "./src/favicon.ico"}),
     new miniCssExtractPlugin(),
     new copyPlugin({
       patterns: [
